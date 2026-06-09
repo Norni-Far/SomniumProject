@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Somnium Project Website (v1)
 
-## Getting Started
+Одностраничный сайт студии `Somnium Project` по GDD из `Data/ReadME.text`.
 
-First, run the development server:
+## Стек
+
+- Next.js (App Router, static export)
+- TypeScript
+- Tailwind CSS v4
+- Formspree (контактная форма)
+
+## Запуск локально
 
 ```bash
+npm install
+cp .env.example .env.local
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Откройте [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Переменные окружения
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+В `.env.local`:
 
-## Learn More
+```bash
+NEXT_PUBLIC_FORMSPREE_ENDPOINT=https://formspree.io/f/your-form-id
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Сборка статики
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Результат в папке `out/`.
 
-## Deploy on Vercel
+## Структура проекта
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `src/app` — layout, page, глобальные стили, providers
+- `src/components` — секции сайта и UI-компоненты
+- `src/data` — все структурные данные (услуги, проекты, процесс, интеграции, конфиг)
+- `src/i18n` — словари `ru.json` / `en.json` и провайдер языка
+- `public` — статические ресурсы, `robots.txt`, `sitemap.xml`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Где менять контент
+
+- Услуги: `src/data/services.ts` + локализованные тексты в `src/components/Services.tsx`
+- Портфолио и кейсы: `src/data/projects.ts`
+- Процесс: `src/data/process.ts`
+- SDK & Integrations: `src/data/integrations.ts`
+- Контакты и домен: `src/data/siteConfig.ts`
+- Локализация UI: `src/i18n/ru.json`, `src/i18n/en.json`
+
+## YouTube плейлист
+
+- Главный embed и карточка плейлиста находятся в `src/components/Portfolio.tsx`.
+- Чтобы поменять видео/плейлист, обновите URL в этом компоненте.
+
+## Деплой
+
+Хостинг еще не выбран, проект готов к деплою на Vercel/Netlify/GitHub Pages как статический сайт из `out/`.

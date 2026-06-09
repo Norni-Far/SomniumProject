@@ -1,0 +1,65 @@
+{
+  "lang": "en",
+  "nav": {
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "process": "Process",
+    "contacts": "Contacts",
+    "cta": "Discuss project"
+  },
+  "hero": {
+    "title": "We build games and interactive apps — from concept to launch on Google Play, App Store, and Steam.",
+    "subtitle": "Games, business apps, and prototypes. Remote worldwide.",
+    "badge": "Prototype in up to 7 days",
+    "micro": "We won't promise an MMORPG in a week. A solid prototype — yes.",
+    "primaryCta": "Discuss project",
+    "secondaryCta": "See work"
+  },
+  "services": {
+    "title": "Services",
+    "lead": "We tailor scope to your task and budget. Pricing is discussed after the brief.",
+    "quickTitle": "I need a fast prototype",
+    "quickText": "Best when you need to validate an idea quickly, show a demo, or collect first feedback.",
+    "micro": "We work in stages so your budget does not face a hardcore level without save points."
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "videoTitle": "Main showreel",
+    "videoText": "A short trailer with selected studio projects.",
+    "playlistTitle": "30+ portfolio videos",
+    "playlistText": "Watch more demos, prototypes, and project clips on YouTube.",
+    "playlistHint": "Opens on YouTube",
+    "videosBadge": "30+ videos",
+    "caseTitle": "Detailed case"
+  },
+  "process": {
+    "title": "How we work",
+    "note": "Pricing is discussed individually after the brief."
+  },
+  "about": {
+    "title": "About studio",
+    "text": "Somnium Project is a project-based team for games and interactive apps. We shape the team around the task: from a fast prototype to a launch on Google Play, App Store, and Steam. Remote worldwide.",
+    "sdkTitle": "SDK & Integrations",
+    "sdkText": "We integrate production SDKs: backend, auth, analytics, push notifications, monetization, crash reporting, multiplayer, and live-ops."
+  },
+  "contacts": {
+    "title": "Contacts",
+    "lead": "Describe your task and leave any convenient contact. We reply within 24–48 hours.",
+    "contactLabel": "Contact",
+    "contactPlaceholder": "@telegram, email, phone, or Viber",
+    "taskLabel": "Task description",
+    "taskPlaceholder": "What should we build and what result do you need?",
+    "budgetLabel": "Budget",
+    "timelineLabel": "Timeline",
+    "timelinePlaceholder": "For example: MVP in 6 weeks",
+    "fileLabel": "File (PDF / DOC / DOCX, up to 10 MB)",
+    "submit": "Send request",
+    "sending": "Sending...",
+    "success": "We will contact you within 24–48 hours.",
+    "error": "Failed to send the form. Check your Formspree endpoint.",
+    "fileError": "Upload PDF, DOC, or DOCX only, up to 10 MB."
+  },
+  "footer": {
+    "rights": "Somnium Project © 2026"
+  }
+}
