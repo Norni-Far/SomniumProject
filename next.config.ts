@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-const repoName = "SomniumProject_StudioSite";
+const repoName = "SomniumProject";
 
 const nextConfig: NextConfig = {
   output: "export",
