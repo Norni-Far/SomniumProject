@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://somniumproject.com/sitemap.xml
+Sitemap: https://norni-far.github.io/SomniumProject/sitemap.xml
