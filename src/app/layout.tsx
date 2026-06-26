@@ -11,7 +11,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
-  title: "Somnium Project — разработка игр и интерактивных приложений",
+  title: "Somnium Project — Software Development Studio",
   description:
     "Разрабатываем игры и интерактивные приложения — от идеи до релиза в Google Play, App Store и Steam.",
   alternates: {
